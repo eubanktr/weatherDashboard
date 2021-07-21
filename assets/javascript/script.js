@@ -1,8 +1,5 @@
-// var currentSearch = $('#searchTerm');
-// var searchButton = $('#searchBtn');
-var currentSearch = document.getElementById('searchTerm');
-var searchButton = document.getElementById('searchBtn');
-
+var currentSearch = $('#searchTerm');
+var searchButton = $('#searchBtn');
 var recentSearches = $('#searchHistory');
 var currentWeatherCity = $('#currentCity');
 var cityForecast = $('#forecast');
@@ -18,22 +15,22 @@ function searchSubHandler(event) {
 };
 
 
-// function getWeather (search) {
-//     // const apiURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + search + '&appid=' + apiKey;
-//     const apiKey = "7e265aa18fe4cc94b7554c10023cca4a";
+function getWeather (search) {
+    // const apiURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + search + '&appid=' + apiKey;
+    const apiKey = "7e265aa18fe4cc94b7554c10023cca4a";
 
-//     const apiURL = `https://api.openweathermap.org/data/2.5/forecast?q=${search}&appid=${apiKey}`
+    const apiURL = `https://api.openweathermap.org/data/2.5/forecast?q=${search}&appid=${apiKey}`
 
-//     fetch(apiURL)
-//         .then(function (response) {
-//         if(response.ok) {
-//             response.json().then(function (data) {
-//                 console.log(data);
-//         });
+    fetch(apiURL)
+        .then(function (response) {
+        if(response.ok) {
+            response.json().then(function (data) {
+                console.log(data);
+        });
 
-//         };
+        };
     
-//     });
-// };
+    });
+};
 
 
